@@ -25,5 +25,5 @@
 1.  It is advantageous to save the event name for the explore-to-dialogue state transitions as a Scene variable ("clickNpcEventName") because it becomes a sort of global variable and can be used across different graphs and be recognized. 
 2. I used two instances of debug.log() node with different descriptions printed, to check if the program was switching between both states of dialogue and exploration mode, with different debug text to see if it was transitioning or not. This helped me narrow down where the problem was.
 3. Yes, for my future project (a social skill simulator), the Set Cursor Lock State is actually relevant since there shouldn’t be any clicking during exploration. It was surprisingly simple.
-4. Yes, the concept of «a game state» is very relevant. Since I am switching scenes often and with a fail condition, this was really helpful.
+4. Yes, the concept of "a game state" is very relevant. Since I am switching scenes often and with a fail condition, this was really helpful.
 
