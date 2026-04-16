@@ -15,3 +15,13 @@
 <img width="960" height="720" alt="image" src="https://github.com/user-attachments/assets/48d3a2e8-547b-47e3-b1e9-501ff5764172" />
 
 
+## W3
+### Activity 1
+[bricked down.pdf](https://github.com/user-attachments/files/26769137/bricked.down.pdf)
+
+### Activity 2
+1. Why is it advantageous to save the event name for the explore-to-dialogue state transitions as Scene variable ("clickNpcEventName")? it help you remeber what shoudl trigger it 
+2. Describe how using at least one Debug.Log() node helped you test your Graphs at an intermediate step. i used twowith differrent descriptions to chekc if its switching betwen both statees
+3. Is the Set Cursor Lock State relevant to your Vertical Slice? Why or why not? yes for mine actually since there shouldnt be any clicking on exsploration it was suprisjing simle
+4. Is the concept of a "game state" relevant to your Vertical Slice? Why or why not?
+yes very much so sicne im swiching scens this was really helpful
