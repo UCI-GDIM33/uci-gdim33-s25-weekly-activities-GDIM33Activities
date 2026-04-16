@@ -1,3 +1,4 @@
+<img width="841" height="718" alt="Screenshot 2026-04-15 at 11 30 12 PM" src="https://github.com/user-attachments/assets/6cec670e-adc3-4cf5-b6c1-642bb91ee743" />
 # GDIM 33 In-Class Activities
 ## W1
 ### Activity 1
@@ -17,11 +18,12 @@
 
 ## W3
 ### Activity 1
-[bricked down.pdf](https://github.com/user-attachments/files/26769137/bricked.down.pdf)
+<img width="841" height="718" alt="Screenshot 2026-04-15 at 11 30 12 PM" src="https://github.com/user-attachments/assets/7aecb9cb-624e-43ad-b197-7984ef6133e1" />
+
 
 ### Activity 2
-1. Why is it advantageous to save the event name for the explore-to-dialogue state transitions as Scene variable ("clickNpcEventName")? it help you remeber what shoudl trigger it 
-2. Describe how using at least one Debug.Log() node helped you test your Graphs at an intermediate step. i used twowith differrent descriptions to chekc if its switching betwen both statees
-3. Is the Set Cursor Lock State relevant to your Vertical Slice? Why or why not? yes for mine actually since there shouldnt be any clicking on exsploration it was suprisjing simle
-4. Is the concept of a "game state" relevant to your Vertical Slice? Why or why not?
-yes very much so sicne im swiching scens this was really helpful
+1.  It is advantageous to save the event name for the explore-to-dialogue state transitions as a Scene variable ("clickNpcEventName") because it becomes a sort of global variable and can be used across different graphs and be recognized. 
+2. I used two instances of debug.log() node with different descriptions printed, to check if the program was switching between both states of dialogue and exploration mode, with different debug text to see if it was transitioning or not. This helped me narrow down where the problem was.
+3. Yes, for my future project (a social skill simulator), the Set Cursor Lock State is actually relevant since there shouldn’t be any clicking during exploration. It was surprisingly simple.
+4. Yes, the concept of «a game state» is very relevant. Since I am switching scenes often and with a fail condition, this was really helpful.
+
