@@ -3,8 +3,11 @@ using Unity.VisualScripting;
 
 namespace W4Activity
 {
+    
     public class DialogueAdvancerW4 : MonoBehaviour
     {
+        [SerializeField] 
+        private DialogueNodeW4 DialogueNodeW4 ;
         // Singleton stuff- allows this class to be accessed from anywhere in the codebase without a reference (like a member variable)
         // do not edit this line
         public static DialogueAdvancerW4 _Instance {get; private set;}
@@ -20,6 +23,10 @@ namespace W4Activity
             _Instance = this;
         }
 
+void Start()
+    {
+       ChooseDialogue(DialogueNodeW4);
+    }
         // Button hooks up to this method
         // do not edit this method
         public void ChooseDialogue (DialogueNodeW4 nextLine)
