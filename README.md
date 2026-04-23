@@ -34,20 +34,20 @@
 ##  My playtesting notes:
  My playtest members were Jacob, Isabel, Kristin, and Andy.
 
-//  «Who’s Laila?» recommended for playing
-// Textures need to be added
-// UI is good and clear, although people are curious about the upper left icon
-// character is floating, not goal
-// character can ride on NPCs shoulder, she is not falling as she should
-// Camera is working well, all be it the controls are following the camera and not the character
-// people like the models
-// Clear expressions in the UI, and the UI state machine is working and changing
-// Feels evil
+-  «Who’s Laila?» recommended for playing
+- Textures need to be added
+- UI is good and clear, although people are curious about the upper left icon
+- character is floating, not goal
+- character can ride on NPCs shoulder, she is not falling as she should
+- Camera is working well, all be it the controls are following the camera and not the character
+- people like the models
+- Clear expressions in the UI, and the UI state machine is working and changing
+- Feels evil
 
 
-### Activity 2:
+### Activity 2
 1. I believe a writer could add more dialogue to this setup without writing any code. Using scriptable objects, they could edit and replace them with real dialogue for the whole flow and setup. From experience, I know having a programmer on board for polish helps, but realistically, I think an arrangement could be made where a writer could add to it without any code.
-2. What limit is there to the number of dialogue nodes that the writer could create without writing any code? In terms of dialogue nodes, without writing any code, it seems unlimited. One thing is creating them, another is hooking them up. For this activity alone, I could write as many as I wanted before having to deal with code. I assume the limit is how many could be connected, and whether the writer was in charge of that.
+2.  In terms of dialogue nodes, without writing any code, it seems unlimited to the number you could make without writing anycode. One thing is creating them, another is hooking them up. For this activity alone, I could write as many as I wanted before having to deal with code. I assume the limit is how many could be connected, and whether the writer was in charge of that.
 3. The "Regenerate Nodes" button seems to add custom nodes to the default Unity search options you get to choose from in visual scripting.
 
 
