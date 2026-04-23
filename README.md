@@ -27,3 +27,27 @@
 3. Yes, for my future project (a social skill simulator), the Set Cursor Lock State is actually relevant since there shouldn’t be any clicking during exploration. It was surprisingly simple.
 4. Yes, the concept of "a game state" is very relevant. Since I am switching scenes often and with a fail condition, this was really helpful.
 
+## W4
+### Activity 1
+ Currently, in my build with visual scripting, there is a movement system, the ability to click to switch states, UI, a main character model, a scene, and NPC models. The playtesting goals were to see how intuitive the UI was and how the movement felt, navigating the scene, interacting with the UI, and clicking.
+
+##  My playtesting notes:
+ My playtest members were Jacob, Isabel, Kristin, and Andy.
+
+//  «Who’s Laila?» recommended for playing
+// Textures need to be added
+// UI is good and clear, although people are curious about the upper left icon
+// character is floating, not goal
+// character can ride on NPCs shoulder, she is not falling as she should
+// Camera is working well, all be it the controls are following the camera and not the character
+// people like the models
+// Clear expressions in the UI, and the UI state machine is working and changing
+// Feels evil
+
+
+### Activity 2:
+1. I believe a writer could add more dialogue to this setup without writing any code. Using scriptable objects, they could edit and replace them with real dialogue for the whole flow and setup. From experience, I know having a programmer on board for polish helps, but realistically, I think an arrangement could be made where a writer could add to it without any code.
+2. What limit is there to the number of dialogue nodes that the writer could create without writing any code? In terms of dialogue nodes, without writing any code, it seems unlimited. One thing is creating them, another is hooking them up. For this activity alone, I could write as many as I wanted before having to deal with code. I assume the limit is how many could be connected, and whether the writer was in charge of that.
+3. The "Regenerate Nodes" button seems to add custom nodes to the default Unity search options you get to choose from in visual scripting.
+
+
