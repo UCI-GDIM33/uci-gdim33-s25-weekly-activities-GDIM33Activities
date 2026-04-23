@@ -634,7 +634,7 @@ MonoBehaviour:
     _objectReferences:
     - {fileID: 321970412}
     - {fileID: 1864240423}
-    - {fileID: 0}
+    - {fileID: 1844561658382488666, guid: 3d1ef0c5b5172413abf23cd502bc8c52, type: 3}
 --- !u!114 &281787051
 MonoBehaviour:
   m_ObjectHideFlags: 0
