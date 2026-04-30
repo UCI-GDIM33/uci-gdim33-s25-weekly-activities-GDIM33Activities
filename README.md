@@ -54,3 +54,27 @@ Notes: movement and collisions are smooth, good proof of concept, hoping for way
 
 Bonus Point: I added a VFX that is played every time a button is clicked.
 <img width="1550" height="870" alt="bonuspoint" src="https://github.com/user-attachments/assets/f2b998e9-563e-4ff1-8dd0-acebf8836db6" />
+
+<hr>
+
+## W5
+### Activity 0
+Unity tool: Animator
+
+### Activity 1
+Since I've already implemented an Animator for the PlayerController, so I will implement TileMap for my platformer's levels instead.
+
+Building plan:
+1. Get a basic set of tiles (only one kind, no variant) working in Unity.
+  - Import tiles and slice them. Check the sliced sprites to see that they are the expected size (no cut-off tiles, stray pixels from other tiles, etc).
+  - Add colliders and build a simple level (ideally using every tile so each tile can be tested). Test the collision using the player. Good collision should prevent the player from falling through the level, and match the visual appearance of the tiles.
+2. Import tile variants for visual detail (eg: other tiles, animated tiles, etc).
+  - Import tiles and slice them. Check the sliced sprites for correctness
+  - Add colliders, test again
+  - For tiles that blend together, test blending rules by placing blending tiles together and ensure they are being drawn as intended
+
+## Activity 2
+I imported a basic tile, wall, and paintile, replacing the old level pieces (~10 SpriteRenderer GameObjects) with 3 Tilemap GameObjects. This will make it a lot easier to add onto and build new levels in the future.
+
+<img width="1483" height="810" alt="image" src="https://github.com/user-attachments/assets/4db0ac14-9d0e-4750-9eea-88fe4d6215a8" />
+Pipe walls for the future, maybe a parallax background? :)
