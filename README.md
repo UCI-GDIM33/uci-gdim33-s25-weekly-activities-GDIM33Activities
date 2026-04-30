@@ -52,36 +52,34 @@
 
 ## W5
 ### Activity 1
-animation steps
 
-
-Animation 3d
-
+Animation 3d steps
+information still needed:
 * Parameters outlined
 * Define states
 
 This system will play a different animation depending on which dialogue choice is chosen, using a state machine and enums.
 
-1. Code a separate state machine from the one I already have.
-    * Build the state machine
-    * Test transitions between states using debug logs only
-2. Download and add animations into Unity
+BIG STEPS
+1. Code a separate state machine from the one I already have and build the state machine, test transitions between states using debug logs only
+2. Download and add animations to Unity
 3. Use the state machine to change animations
 4. Trigger animation changes connected with Scriptable Objects
 
+SMALLER BIT-SIZED STEPS
 1. Add enums to the NPC for storing state
 2. Use debug logs to verify if an animation would be triggered after certain dialogue choices
 3. State machine sends a transition signal to the animation controller
 4. Fire off animation changes via Scriptable Objects
 5. Create animations in Blender and transfer them
 6. Add an Animator to the player
-    * Test each animation individually by setting it as the default animation state and running the game
-7. Add parameters to the Animator to control states
-    * Update the state machine so the Idle animation plays when the game starts
-8. Continue building and testing one animation state transition at a time until all transitions are validated
+7.  Test each animation individually by setting it as the default animation state and running the game
+8. Add parameters to the Animator to control states
+9.  Update the state machine so the Idle animation plays when the game starts
+10. Continue building and testing one animation state transition at a time until all transitions are validated
 
 
 ### Activity 2
-Today I created an animation for my NPC in blendr, built a rig in Unity using 52 bones, set up animation parameters, and attached everything to the NPC.
+Today I created an animation for my NPC in Blender, built a rig in Unity using 52 bones, set up animation parameters, and attached everything to the NPC.
 Next step is to get my state machine fully working.
 
