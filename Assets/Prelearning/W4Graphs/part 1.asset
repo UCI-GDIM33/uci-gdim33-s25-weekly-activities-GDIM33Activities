@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d87814806be98455aa06d85e22ad29d6, type: 3}
-  m_Name: DialogueLineW4
+  m_Name: part 1
   m_EditorClassIdentifier: 
   Line: fahhh
   ReplyOptions:
   - line: bro save me
-    nextNode: {fileID: 11400000}
+    nextNode: {fileID: 11400000, guid: a4d53f5e2a07e433cb7b53ccf8c9d596, type: 2}
   - line: gyaat
     nextNode: {fileID: 11400000, guid: a4d53f5e2a07e433cb7b53ccf8c9d596, type: 2}
