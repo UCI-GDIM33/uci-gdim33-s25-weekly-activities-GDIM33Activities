@@ -50,4 +50,38 @@
 2.  In terms of dialogue nodes, without writing any code, it seems unlimited to the number you could make without writing anycode. One thing is creating them, another is hooking them up. For this activity alone, I could write as many as I wanted before having to deal with code. I assume the limit is how many could be connected, and whether the writer was in charge of that.
 3. The "Regenerate Nodes" button seems to add custom nodes to the default Unity search options you get to choose from in visual scripting.
 
+## W5
+### Activity 1
+animation steps
+
+
+Animation 3d
+
+* Parameters outlined
+* Define states
+
+This system will play a different animation depending on which dialogue choice is chosen, using a state machine and enums.
+
+1. Code a separate state machine from the one I already have.
+    * Build the state machine
+    * Test transitions between states using debug logs only
+2. Download and add animations into Unity
+3. Use the state machine to change animations
+4. Trigger animation changes connected with Scriptable Objects
+
+1. Add enums to the NPC for storing state
+2. Use debug logs to verify if an animation would be triggered after certain dialogue choices
+3. State machine sends a transition signal to the animation controller
+4. Fire off animation changes via Scriptable Objects
+5. Create animations in Blender and transfer them
+6. Add an Animator to the player
+    * Test each animation individually by setting it as the default animation state and running the game
+7. Add parameters to the Animator to control states
+    * Update the state machine so the Idle animation plays when the game starts
+8. Continue building and testing one animation state transition at a time until all transitions are validated
+
+
+### Activity 2
+Today I created an animation for my NPC in blendr, built a rig in Unity using 52 bones, set up animation parameters, and attached everything to the NPC.
+Next step is to get my state machine fully working.
 
