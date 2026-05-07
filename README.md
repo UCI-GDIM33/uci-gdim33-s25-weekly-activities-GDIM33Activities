@@ -88,4 +88,23 @@ activity 2
   
 For Activity 2, I had already set up some variables in my C# script before class. During class, I first created matching variables in the Animator, and then I mainly worked on building the logic in Visual Scripting based on those variables, especially using a state machine to control the two main states: unarmed and pistol-equipped.This part went fairly smoothly, but later I had trouble connecting the Animator. Player cannot transform to idle state. Finally, I find out it is because one variable could not be trigger, and then I found that I was missing a line related to a bool in the script. In the end, I fixed that, and the animation works smoothly.
 
+
+## W6
+### Activity 1
+1, I added an enemy movement system. The guards can now patrol between points, chase the player, and shoot when the player is close enough. I also continued improving the player systems, including aiming, camera movement, and weapon-related state changes.
+
+2，[Game Itch page](https://alex-dkc.itch.io/milstone2)
+
+3, My playtesting goals: I want to test whether the enemy movement system feels smooth and whether the player movement system also feels smooth during gameplay. I especially want to see if the guard patrol, chase, and shooting behaviors work in a clear and believable way.
+
+4, comments from playtesters:
+
+  -There are some clipping problems between characters and objects.
+  
+  -The map does not give enough guidance, so the player may not know where to go.
+  
+  -After one guard finishes an animation, it sometimes keeps spinning in circles.
+
+
+
   
