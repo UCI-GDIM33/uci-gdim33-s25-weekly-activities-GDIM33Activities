@@ -98,8 +98,11 @@ For Activity 2, I had already set up some variables in my C# script before class
 3, My playtesting goals: I want to test whether the enemy movement system feels smooth and whether the player movement system also feels smooth during gameplay. I especially want to see if the guard patrol, chase, and shooting behaviors work in a clear and believable way.
 
 4, comments from playtesters:
+
   -There are some clipping problems between characters and objects.
+  
   -The map does not give enough guidance, so the player may not know where to go.
+  
   -After one guard finishes an animation, it sometimes keeps spinning in circles.
 
 
