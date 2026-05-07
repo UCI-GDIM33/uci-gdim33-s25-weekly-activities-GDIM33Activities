@@ -90,7 +90,7 @@ For Activity 2, I had already set up some variables in my C# script before class
 
 
 ## W6
-# Activity 1
+### Activity 1
 1, I added an enemy movement system. The guards can now patrol between points, chase the player, and shoot when the player is close enough. I also continued improving the player systems, including aiming, camera movement, and weapon-related state changes.
 
 2，[Game Itch page](https://alex-dkc.itch.io/milstone2)
