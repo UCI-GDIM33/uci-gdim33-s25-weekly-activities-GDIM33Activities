@@ -83,3 +83,18 @@ SMALLER BIT-SIZED STEPS
 Today I created an animation for my NPC in Blender, built a rig in Unity using 52 bones, set up animation parameters, and attached everything to the NPC.
 Next step is to get my state machine fully working.
 
+## W6
+### Activity 1
+my playtesting goal is to check the current dialogue and scene flow, if animations are working, checking for bugs, and seeing if changes made to UI, art, and scene and dialogue, as they haven’t played that yet, works, mostly looking for dialogue scene feedback. since my milestone 1 i got animations working and a new scene with a new character i made and dialogue,
+
+### playtesting notes
+Scene progression is working, control sensitivity is very sensitive. Everything is intuitive but clicking when it comes to controls, movement is funny, make the typing faster for dialogue, add skybox, dialogue mode wrong connection goes back to previous scene, animation working, oh there is a skip option for some button seems to be broken, new one added today. Need to set up my colliders for scenes. The dialogue choices are working, people are reading out loud, first one is hard to click on, eerie vibe talking to zoya character. People love the UI 
+
+### Activity 2
+1. multiply setting of the blend node makes the resulting color darker, because it’s multiplying fractions and becoming a lower numbers, and lower numbers are darker and less saturated than the inputted color.
+2. if we use multiply to combine alpha values i would assume it works similar with multiplication of fractions being less translucent than either of the values because it would be a lower number.
+3. the shader gets the UV values from the mesh data which stores the UV coordinates.
+4. it sounds both interesting and exciting to manipulate colors with math, for a general color match in a scene.
+
+
+
