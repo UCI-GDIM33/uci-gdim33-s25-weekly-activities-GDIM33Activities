@@ -110,7 +110,7 @@ For Activity 2, I had already set up some variables in my C# script before class
 
 1, Multiplysetting of the Blend node make the resulting colordarker and less saturatedthan the input colors because it multiplies each RGB  value, and those values are between 0 to 1. There for multiply two numbers in that range, the result is  smaller, for example 0.1* 0.2 = 0.02, so the color becomes darker
 
-2, same as the RGB value, 2 Alpha values multiply with each other will get a smaller. In Aplha balue, 0 is translucent, 1 is not translucent. Therefore, a smaller alpha of the output value means more translucent
+2, same as the RGB value, Alpha values multiply with each other will get a smaller value. In Aplha balue, 0 is translucent, 1 is not translucent. Therefore, a smaller alpha of the output value means more translucent
 
 3, The shader get the UV values from the mesh. The model already stores UV coordinates, and the shader use the data to find which color or texture to use.
 
