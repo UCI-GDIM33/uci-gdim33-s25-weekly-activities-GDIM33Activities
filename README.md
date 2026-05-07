@@ -108,7 +108,7 @@ For Activity 2, I had already set up some variables in my C# script before class
 
 ### Activity 2
 
-1, Multiplysetting of the Blend node make the resulting colordarker and less saturatedthan the input colors because it multiplies each RGB  value, and those values are between 0 to 1. There for multiply two numbers in that range, the result is  smaller, for example 0.1* 0.2 = 0.02, so the color becomes darker
+1, Multiplysetting of the Blend node make the resulting colordarker and less saturatedthan the input colors because it multiplies each RGB  value, and those values are between 0 to 1. Therefore, multiply two numbers in that range, the result is  smaller, for example 0.1* 0.2 = 0.02, so the color becomes darker
 
 2, same as the RGB value, Alpha values multiply with each other will get a smaller value. In Aplha balue, 0 is translucent, 1 is not translucent. Therefore, a smaller alpha of the output value means more translucent
 
