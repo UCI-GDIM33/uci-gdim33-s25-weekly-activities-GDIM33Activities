@@ -73,8 +73,16 @@ Building plan:
   - Add colliders, test again
   - For tiles that blend together, test blending rules by placing blending tiles together and ensure they are being drawn as intended
 
-## Activity 2
+### Activity 2
 I imported a basic tile, wall, and paintile, replacing the old level pieces (~10 SpriteRenderer GameObjects) with 3 Tilemap GameObjects. This will make it a lot easier to add onto and build new levels in the future.
 
 <img width="1483" height="810" alt="image" src="https://github.com/user-attachments/assets/4db0ac14-9d0e-4750-9eea-88fe4d6215a8" />
 Pipe walls for the future, maybe a parallax background? :)
+
+<hr>
+
+## W6
+### Activity 1
+New (visible) features: you can now drop items, aim and fire the gun, aim and throw items like boxes.<br>
+[Link](https://sunrd.itch.io/adventure-of-a-sticky-hand-playtest2)<br>
+Playtesting goal: See if movement is smoother than last week's... also find bugs (particularly in the sticky hand. bane of my existence)<br>
