@@ -65,6 +65,7 @@ Added a state machine system and created an inherited class from NPC called "Col
 
 ## W6
 ### Activity 1
+#### Part I
 I've barely had time to work on this project, as I am currently involved with two other projects, but between the last milestone and now, I fixed multiple bugs regarding the visual scripting
 
 (https://gio-solorio.itch.io/new-thing)
@@ -73,4 +74,14 @@ Playtesting goals:
 - Viable replayability using the "favor" stat manipulation.
 - Engagement with an immersive, or otherwise engaging, narrative concept.
 
+#### Part II
+Playtesters: Jasmine Caicedo, Joshua Paxton
+
+Notes: Playtesters believed the experience became much more lively with live voice-acting. The possibility to give each character proper voice work could aid in immersing the player within the environment.
+
 ### Activity 2
+1. Both the multiplied values within the channel will be decimals between 0.0 - 1.0, hence they will equal a smaller value than the input. In RGB channels, values closer to 0.0 are represented as being darker, with 0.0 itself representing black.
+2. Similar to the previous example, values closer to 0 will ultimately be more transparent. Being that the values being multiplied will typically be between 0.0 - 1.0, it means the result will be more transparent.
+3. The texture sampling node gets the UV coordinates from the Shiba's UV Map, allowing any texture to be applied.
+4. I'm not personally an artist, so I tend to stay away from having to manage the art creation between more projects unless absolutely necessary. With that being said, I have multiple friends who are artists and would likely be much more eager to take advantage of this tool.
+
