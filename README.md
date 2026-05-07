@@ -88,3 +88,9 @@ New (visible) features: you can now drop items, aim and fire the gun, aim and th
 Playtesting goal: See if movement is smoother than last week's... also find bugs (particularly in the sticky hand. bane of my existence)<br>
 
 Feedback: player gets stuck on platform corners (completely halts), bit hard to control ('slippery'). Boxes slip around weirdly when on their sides (maybe due to Platformer Effector?)
+
+### Activity 2
+1. Multiply makes colours darker and less saturated because the setting multiplies the values of the input vectors, which will result in higher values
+2. 
+3. 
+4. 
