@@ -59,3 +59,18 @@ Creation of the Infection System:
     - Implement new art assets onto Unity
     - Create a [SerializeField] to add these assets within the parent NPC class.
     - Change the presented sprite within the afformentioned switch statement.
+
+### Activity 2
+Added a state machine system and created an inherited class from NPC called "CollegeKid" where a switch statement would determine the condition of each NPC depending on the total "favor" the player accumulates. 
+
+## W6
+### Activity 1
+I've barely had time to work on this project, as I am currently involved with two other projects, but between the last milestone and now, I fixed multiple bugs regarding the visual scripting
+
+(https://gio-solorio.itch.io/new-thing)
+
+Playtesting goals:
+- Viable replayability using the "favor" stat manipulation.
+- Engagement with an immersive, or otherwise engaging, narrative concept.
+
+### Activity 2
