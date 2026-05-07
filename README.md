@@ -90,7 +90,7 @@ Playtesting goal: See if movement is smoother than last week's... also find bugs
 Feedback: player gets stuck on platform corners (completely halts), bit hard to control ('slippery'). Boxes slip around weirdly when on their sides (maybe due to Platformer Effector?)
 
 ### Activity 2
-1. Multiply makes colours darker and less saturated because the setting multiplies the values of the input vectors, which will result in higher values
-2. 
-3. 
-4. 
+1. Multiply makes colours darker and less saturated because the setting multiplies the values of the input vectors, which will result in smaller values since we store the colour channels as decimals (0.0-1.0). The numbers can only get smaller, and RGB 0,0,0 = black, so all multiplications of colours will result in getting closer to black.
+2. The resultant colour will be more transparent, by the same logic in Question 1. For example, Alpha 0.8 * Alpha 0.4 = Alpha 0.32 (even more transparent than either 0.8 or 0.4)
+3. UV values are stored in vertex data, so this data is from the mesh.
+4. A bit. It sounds kinda nerdy, but honestly kinda cool...
