@@ -86,3 +86,5 @@ Pipe walls for the future, maybe a parallax background? :)
 New (visible) features: you can now drop items, aim and fire the gun, aim and throw items like boxes.<br>
 [Link](https://sunrd.itch.io/adventure-of-a-sticky-hand-playtest2)<br>
 Playtesting goal: See if movement is smoother than last week's... also find bugs (particularly in the sticky hand. bane of my existence)<br>
+
+Feedback: player gets stuck on platform corners (completely halts), bit hard to control ('slippery'). Boxes slip around weirdly when on their sides (maybe due to Platformer Effector?)
