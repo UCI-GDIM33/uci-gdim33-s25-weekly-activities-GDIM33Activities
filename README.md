@@ -90,10 +90,10 @@ For Activity 2, I had already set up some variables in my C# script before class
 
 
 ## W6
-## Activity 1
+# Activity 1
 1, I added an enemy movement system. The guards can now patrol between points, chase the player, and shoot when the player is close enough. I also continued improving the player systems, including aiming, camera movement, and weapon-related state changes.
 
-2，[Game Itch page] (https://alex-dkc.itch.io/milstone2)
+2，[Game Itch page](https://alex-dkc.itch.io/milstone2)
 
 3, My playtesting goals: I want to test whether the enemy movement system feels smooth and whether the player movement system also feels smooth during gameplay. I especially want to see if the guard patrol, chase, and shooting behaviors work in a clear and believable way.
 
