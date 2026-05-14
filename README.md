@@ -94,3 +94,14 @@ Feedback: player gets stuck on platform corners (completely halts), bit hard to 
 2. The resultant colour will be more transparent, by the same logic in Question 1. For example, Alpha 0.8 * Alpha 0.4 = Alpha 0.32 (even more transparent than either 0.8 or 0.4)
 3. UV values are stored in vertex data, so this data is from the mesh.
 4. A bit. It sounds kinda nerdy, but honestly kinda cool...
+
+<hr>
+
+## W7
+1. The data for the vertex colour node comes from the vertex data stored in the mesh.
+2. Because we only have colour data for the vertices, to get colour for areas between the vertices, we interpolate between the vertices' colours, which makes the colours appear to blend between vertices.
+3. Textures allow for the illusion of depth and detail when the underlying mesh is simple, which allowed for last week's shiba to have a mouth. Colour only does what it says on the tin, so there is no depth (or mouth) for this week's shiba, making it look very flat...
+4. Yeah, there seems to be a little patch of colour looking out of place on the shiba's left hindleg.
+5. We could check the UV data. Incorrect UV data would make textures draw weirdly, and it might be helpful to see if some and which vertices have incorrect UV data.
+6. The lighting error is due to the odd patch we discovered in the NormalDebug shader, likely a few vertices that have incorrect normal data.
+7. We set the blend mode to Additive because Multiply would just make the colours darker and duller, while Additive would make the colours brighter, which is desirable for a fire effect.
