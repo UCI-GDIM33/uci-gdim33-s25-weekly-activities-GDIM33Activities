@@ -85,3 +85,15 @@ Notes: Playtesters believed the experience became much more lively with live voi
 3. The texture sampling node gets the UV coordinates from the Shiba's UV Map, allowing any texture to be applied.
 4. I'm not personally an artist, so I tend to stay away from having to manage the art creation between more projects unless absolutely necessary. With that being said, I have multiple friends who are artists and would likely be much more eager to take advantage of this tool.
 
+## W7
+1. The data for data for the VerterxColor graph comes from the UV map within the mesh, which allows the shader graph to know how to apply the texture onto the Shiba model.
+2. All Vertexes within the model have an assigned color. Between each point, these vertex color are calculated to blend together.
+3. Vertex color is generally less detailed than rendered textures being that the vertex color is contrained by the geometry of the model with general estimates between 
+set colors at each vertex. Vertex color may be a better use for general estimates of how a model will look before applying an actual render.
+4. There's a patch where the Shiba's surface normal within the model is not alligned with the rest.
+5. Along with visualizing the vertex normals of a mesh, the shading debugger can also be used to essentially visualize the dynamics how proper lighting will interact 
+in relation to the mesh.
+6. The lighting error is caused being that the vactor coming from the Shiba and from the light source are coming from different ways, one being negative and the other 
+being positive. This causes the dot product to become negative, causing an inverted lighting scheme. In order to fix it, the vector coming from the Shiba must be 
+multiplied by a negative so that the resulting dot product may be positive.
+7. Making the Blend Mode additive adds the background's color to the shader, making it seem more natural.
