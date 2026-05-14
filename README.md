@@ -99,7 +99,7 @@ Scene progression is working, control sensitivity is very sensitive. Everything 
 ## W7
 ### Activity 1
 1. I think the data for the vertex color shader comes from the mesh’s surface normals as (r, g, b) color.
-2. Since vertex color is stored as data in each vertex of the mesh, why is the color on our shiba from step (3) blended at the edges of different regions of color?
+2. Since vertex color is stored as data in each vertex of the mesh, why is the color on our shiba from step (3) blended at the edges of different regions of color? 
 3. Why is the shiba from step (3), which is colored with vertex color, less detailed than the shiba we rendered with a texture in last week’s activity? Given that vertex color
 4.  generally results in a less detailed color application than applying a texture, what can you imagine vertex color is useful for?
 5. Based on the color of the shiba in step (4), does anything look wrong with the mesh’s vertex normals?
