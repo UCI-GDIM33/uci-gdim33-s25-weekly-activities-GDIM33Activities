@@ -95,3 +95,18 @@ Test: Run the game; if the UI panel on screen updates to show the custom "Title"
    While building the feature today, I ran into a frustrating issue where the UI refused to update and kept throwing a "Missing Target" error. To find the bug, I had to use a lot of trial and error. I spent a long time connecting and disconnecting different logic wires to isolate exactly where the break was happening. I noticed that while the "Title" part of the system seemed to work fine in some tests, the "Content" section would often cause the whole system to fail.
 
    After carefully comparing my nodes and testing different versions of the same command, I finally discovered the root cause: I was using the wrong version of the Set Text node. In Unity, there is a version for 3D objects and a version specifically for UI elements called TextMeshProUGUI. Because these nodes look almost identical in the graph editor, I had accidentally picked the 3D one. By systematically disconnecting my variables and testing them one by one, I was able to identify the mismatch. Once I replaced the nodes with the correct UGUI versions and cleaned up my wiring, the text finally displayed perfectly. Finally, I completed the scripting of the scriptable object and modified the UI so that when players click different keys, they would be redirected to different interfaces.
+
+## W7
+1. Is from 3D model resource file
+
+2. Because the GPU performed interpolation. The shader will automatically calculate a transitional color for each pixel within the polygon based on the color values of the three vertices of the triangle.
+
+3. The vertex coloring has poor details because its resolution is limited by the number of model faces (only areas with vertices have color data); while textures can define details at each pixel. Vertex colors do not occupy additional texture memory and are suitable for optimizing performance and adding color variations to large areas of the environment.
+
+4. The normal direction of the vertices of the grid is incorrect.
+
+5. In addition to the normal vector, we can also visualize the UV coordinates. By mapping the U and V components of the UV onto the red (R) and green (G) channels respectively, we can check for any stretching, distortion or misalignment in the texture by observing the smoothness and arrangement of the colors. This can be used to detect if there are any alignment issues with the model.
+
+6. It is due to the logical reversal of the dot product. The default direction vector of the light ray points from the light source to the object, while the normal vector points outward from the object; when the light ray is directed towards the front, the two vectors are in opposite directions, and the dot product is negative (turning black). Therefore, we need to multiply the light vector by -1 to reverse the direction.
+
+7. In step (6), the flame is set to the "Additive" mode because this mode directly adds the pixel color values of the flame to the background color. Since the flame is a luminous object, additive blending makes the overlapping parts brighter, perfectly simulating the visual effect of the flame, and also eliminating the hassle of handling complex occlusion relationships.
