@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TexturedMat
-  m_Shader: {fileID: -6465566751694194690, guid: 67c651f7d1c471944834b8cb76ca81cf,
+  m_Name: BasicLightMat
+  m_Shader: {fileID: -6465566751694194690, guid: 7ba93e6d4bdd02c4abe851c9bf392332,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -25,7 +25,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: f14ac32e50dc84f7bba1d38cf785917c, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -118,9 +118,8 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _Tint: {r: 0, g: 1, b: 0.854902, a: 0.5019608}
   m_BuildTextureStacks: []
---- !u!114 &4110147488917282442
+--- !u!114 &2026557738394967846
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
