@@ -96,5 +96,14 @@ Scene progression is working, control sensitivity is very sensitive. Everything 
 3. the shader gets the UV values from the mesh data which stores the UV coordinates.
 4. it sounds both interesting and exciting to manipulate colors with math, for a general color match in a scene, and for making ghosts.
 
-
+## W7
+### Activity 1
+1. For our vertex color shader in step (3), where did the data for the Vertex Color node come from?
+2. Since vertex color is stored as data in each vertex of the mesh, why is the color on our shiba from step (3) blended at the edges of different regions of color?
+3. Why is the shiba from step (3), which is colored with vertex color, less detailed than the shiba we rendered with a texture in last week’s activity? Given that vertex color
+4.  generally results in a less detailed color application than applying a texture, what can you imagine vertex color is useful for?
+Based on the color of the shiba in step (4), does anything look wrong with the mesh’s vertex normals?
+We used the color output of a shader to visualize a mesh’s vertex normal values in step (4). Name one other piece of vertex data (or any kind of data) you can imagine testing with a debug shader like this, and describe why that might be useful.
+Why is there an error in the lighting in step (5) on the back of the Shiba?
+Why do you think we set the Blend Mode to Additive for the fire effect in Step (6)?
 
