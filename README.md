@@ -117,5 +117,24 @@ For Activity 2, I had already set up some variables in my C# script before class
 4, Yes, I know the reason of the changes of color
 
 
+## W7
+1. The data came from the mesh. It stores color information on each vertex, and the Vertex Color node reads color information from it.
+
+2. Unity blends the colors between nearby vertex, so the edges between colors look smooth.
+
+3. Vertex color is less detailed because the color only exists on the vertrex of the mesh (limited by amount of vertrex of mesh), which is less detailed than store by pixels.
+   Vertex color can use for simple coloring or stylized effects
+
+4. I do not see anything wrong. The colors look smooth, if there were a problem, one area would color may mot match smoothy with nearby color
+
+5. debug shader can help us see if the UV are stretched or be placed incorrectly.
+
+6. The lighting looks wrong because the light direction and the surface normal is opposite. Therefore, the side that should be bright becomes dark, and the side that should be dark becomes bright.
+
+7. Additive makes fire look bright, because it add on the background, which makes it like a real fire.
+
+
+
+
 
   
