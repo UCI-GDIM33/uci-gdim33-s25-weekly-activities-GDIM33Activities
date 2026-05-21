@@ -134,6 +134,33 @@ For Activity 2, I had already set up some variables in my C# script before class
 7. Additive makes fire look bright, because it add on the background, which makes it like a real fire.
 
 
+## W8
+
+### Activity 1
+
+1. Since Milestone 2, I adjusted the guard detection system, including the guard’s vision angle and detection distance. I also removed some unnecessary objects from the map to make the level cleaner, added colliders to some objects so the player and guards interact with the environment more correctly.
+
+2.
+
+3. My playtesting goals were to test the guard detection, attack, and chase systems. I also wanted to test the player weapon system, including switching weapons, aiming, shooting, and damaging enemies.
+
+4.
+  1. The game should have a health bar or health UI, because right now the player cannot clearly know how much health they have left.
+  2. The shooting effect needs improvement. For example, adding muzzle flash, bullet impact, or stronger shooting feedback would make the weapons feel better.
+  3. Enemies need clearer hit feedback when they are attacked. Right now, it is hard to tell if the enemy was hit, so stronger impact feedback would make combat feel more satisfying.
+  4. After the player dies, the game should switch to a death screen or game over screen. Player input should also be disabled after death.
+  
+### Activity 2
+
+1.It called FullScreenPassRendererFeature, because when I click this pass, the whole screen start has the red cobblestone texture overlay.
+
+2. When the Lerp value is 0, the screen looks normal. When the value is 0.5, the red cobblestone texture is partly visible. When the value is 1, the red cobblestone effect is fully visible, the whole screen is strongly red.
+
+3. The Lerp node blends between two inputs. The first input is the original game screen. The second input is the multiplied (0-1) with the cobblestone texture.
+
+4. result of sin(time)is -1 to 1, (sin(time)+1)/2 change its result to 0-1, So the effect smoothly changes from no effect to full effect
+
+
 
 
 
