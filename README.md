@@ -140,7 +140,7 @@ For Activity 2, I had already set up some variables in my C# script before class
 
 1. Since Milestone 2, I adjusted the guard detection system, including the guard’s vision angle and detection distance. I also removed some unnecessary objects from the map to make the level cleaner, added colliders to some objects so the player and guards interact with the environment more correctly.
 
-2.
+2. [Playtest](https://alex-dkc.itch.io/milstone)
 
 3. My playtesting goals were to test the guard detection, attack, and chase systems. I also wanted to test the player weapon system, including switching weapons, aiming, shooting, and damaging enemies.
 
