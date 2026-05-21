@@ -145,10 +145,10 @@ For Activity 2, I had already set up some variables in my C# script before class
 3. My playtesting goals were to test the guard detection, attack, and chase systems. I also wanted to test the player weapon system, including switching weapons, aiming, shooting, and damaging enemies.
 
 4.
-  1. The game should have a health bar or health UI, because right now the player cannot clearly know how much health they have left.
-  2. The shooting effect needs improvement. For example, adding muzzle flash, bullet impact, or stronger shooting feedback would make the weapons feel better.
-  3. Enemies need clearer hit feedback when they are attacked. Right now, it is hard to tell if the enemy was hit, so stronger impact feedback would make combat feel more satisfying.
-  4. After the player dies, the game should switch to a death screen or game over screen. Player input should also be disabled after death.
+  - The game should have a health bar or health UI, because right now the player cannot clearly know how much health they have left.
+  - The shooting effect needs improvement. For example, adding muzzle flash, bullet impact, or stronger shooting feedback would make the weapons feel better.
+  - Enemies need clearer hit feedback when they are attacked. Right now, it is hard to tell if the enemy was hit, so stronger impact feedback would make combat feel more satisfying.
+  - After the player dies, the game should switch to a death screen or game over screen. Player input should also be disabled after death.
   
 ### Activity 2
 
