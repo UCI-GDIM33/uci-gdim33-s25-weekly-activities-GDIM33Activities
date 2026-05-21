@@ -110,3 +110,22 @@ Test: Run the game; if the UI panel on screen updates to show the custom "Title"
 6. It is due to the logical reversal of the dot product. The default direction vector of the light ray points from the light source to the object, while the normal vector points outward from the object; when the light ray is directed towards the front, the two vectors are in opposite directions, and the dot product is negative (turning black). Therefore, we need to multiply the light vector by -1 to reverse the direction.
 
 7. In step (6), the flame is set to the "Additive" mode because this mode directly adds the pixel color values of the flame to the background color. Since the flame is a luminous object, additive blending makes the overlapping parts brighter, perfectly simulating the visual effect of the flame, and also eliminating the hassle of handling complex occlusion relationships.
+
+## W8
+### Activity 1
+1. I refined my game scenario, adjusted the values of the enemies, added other items that could be collected, changed the location of the item submission point and added prompts.
+
+2.
+
+3. My goal for the playtest is to ask others about their gaming experience and to identify any bugs.
+
+4. Playtest notes: I noticed that sometimes the monster's target detection seems to have some issues. Even if the player is nearby, it won't attack. Additionally, when pushing the cart, there is some obstruction that blocks the players' view. This can be improved.
+
+### Activity 2C
+1. This pass is named "Full Screen Pass". It can be identified by its position in the rendering process - it appears after all the ordinary objects (OpaqueObjects, Skybox, etc.) have been rendered, which is exactly where the post-processing effect should be located, as it needs to process the entire rendered image.
+
+2. When the value is 0, the screen is completely normal and no red pebble effect can be seen. When the value is 0.5, the screen is a result of the original game image and the red texture effect being mixed equally, giving a semi-transparent red overlay effect. When the value is 1, the screen completely becomes the effect after multiplying by the pebble texture, with the red coverage being the strongest.
+
+3. Because Lerp essentially performs a percentage-based blending between two inputs. A value of 0 means 100% use of the first input (the original image), a value of 1 means 100% use of the second input (the texture overlay effect), and a value of 0.5 means a 50% blend of both. So the larger the number, the more pronounced the effect.
+
+4. Because the output range of sin(time) is from -1 to 1, while Lerp only accepts values between 0 and 1. When sin is negative, it will cause the screen to be very bright. After changing the formula to ((sin(time) + 1) / 2), the output range is compressed to be between 0 and 1. Thus, the Lerp blending value will always be within a valid range.
