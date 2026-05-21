@@ -97,3 +97,20 @@ in relation to the mesh.
 being positive. This causes the dot product to become negative, causing an inverted lighting scheme. In order to fix it, the vector coming from the Shiba must be 
 multiplied by a negative so that the resulting dot product may be positive.
 7. Making the Blend Mode additive adds the background's color to the shader, making it seem more natural.
+
+## W8
+### Activity 1
+1. Made failsafes as to ensure that "favor" isn't accumulated twice over within a node.
+https://gio-solorio.itch.io/playtest
+Playtest Goals:
+Represent diverse narrative branches through player choices within gameplay. These choices outline the interactions between energy, through investigations and the energy drink item, as well as accumulated "favor," through choosing certain dialogue options.
+
+2. Playtest Notes:
+- The animations are janky, and the vidual scripting graphs associated with them need to be cleaned up
+- The game needs proper art.
+
+### Activity 2
+1. The fraction node takes floats and uses the value only after the decimal to make further calcutlations. Being that time is typically measured as a float in Unity, counting milliseconds into each second from the scale of 0.0 - 0.9, it can be applied to ensure that every second the sprite material will illuminate and revert back to its original state every second. This is what produces the shining effect.
+2. If the Sprite texture were set to white, like it is by default, the sprite would consistently be illuminated. The texture, therefore, needs to be set to black as the default in order to allow the illumination to accumulate over time, and later revert once more. Being that it is an effect atop the original texture, however, it needs to be added to make the effect work properly.
+3. It's likely that the reason why the texture of the sprite doesn't change, even when the default changes, is because the sprite's texture overwrites the default. Hence, the effect triggers over the sprite's texture instead of the default texture.
+4. As previously stated, the time node is needed to ensure the shine effect is repeated continuously every second. Multiplying it by ShineSpeed, however, can increase the amount of times the effect repeats per second.
