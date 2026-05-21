@@ -156,7 +156,7 @@ For Activity 2, I had already set up some variables in my C# script before class
 
 2. When the Lerp value is 0, the screen looks normal. When the value is 0.5, the red cobblestone texture is partly visible. When the value is 1, the red cobblestone effect is fully visible, the whole screen is strongly red.
 
-3. The Lerp node blends between two inputs. The first input is the original game screen. The second input is the multiplied (0-1) with the cobblestone texture.
+3. The Lerp node blends between two inputs. The first input is the original game screen. The second data input (0-1) multiplied with the cobblestone texture.
 
 4. result of sin(time)is -1 to 1, (sin(time)+1)/2 change its result to 0-1, So the effect smoothly changes from no effect to full effect
 
