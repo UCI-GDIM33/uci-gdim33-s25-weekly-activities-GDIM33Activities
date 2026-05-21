@@ -105,3 +105,18 @@ Feedback: player gets stuck on platform corners (completely halts), bit hard to 
 5. We could check the UV data. Incorrect UV data would make textures draw weirdly, and it might be helpful to see if some and which vertices have incorrect UV data.
 6. The lighting error is due to the odd patch we discovered in the NormalDebug shader, likely a few vertices that have incorrect normal data.
 7. We set the blend mode to Additive because Multiply would just make the colours darker and duller, while Additive would make the colours brighter, which is desirable for a fire effect.
+
+<hr>
+
+## W8
+### Activity 1
+Playtest feedback:
+- Putting the keyhole above the door makes it seem like the key should be put on the keyhole rather than the door
+- The gun fires strangely at certain held angles (bug)
+
+### Activity 2
+Activity chosen: 2A (outline and cel shading)
+1. The stencil buffer is being used to write where the shiba is (always write 1). This is done first, and then after this, the outline reads the buffer to see where the shiba is. Wherever the shiba *isn't* (not equals 1 in the Renderer Feature settings!), the outline is drawn.
+2. StencilWritePass and DrawOpaqueObjects make no visible difference to the shiba. It's being drawn twice because the first time we're writing to the stencil buffer, and the second time is the usual draw pass.
+3. We add the results because for both results, part of the preview sphere is black (0 0 0). If we multiplied the colours of these spheres, we'd get a lot more black, when really we want the non-black parts to combine.
+4. Changing the layer the shiba is on toggles the outline effect because we set the outline effect to only draw on the Outline layer.
