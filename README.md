@@ -113,7 +113,7 @@ Test: Run the game; if the UI panel on screen updates to show the custom "Title"
 
 ## W8
 ### Activity 1
-1. I refined my game scenario, adjusted the values of the enemies, added other items that could be collected, changed the location of the item submission point and added prompts.
+1. I refined my game scenario, adjusted the values of the enemies, added other items that could be collected.
 
 2.
 
