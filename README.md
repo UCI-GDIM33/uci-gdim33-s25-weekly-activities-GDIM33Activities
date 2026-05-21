@@ -115,7 +115,7 @@ Test: Run the game; if the UI panel on screen updates to show the custom "Title"
 ### Activity 1
 1. I refined my game scenario, adjusted the values of the enemies, added other items that could be collected.
 
-2.
+2. https://beiduo-jin.itch.io/vsms3
 
 3. My goal for the playtest is to ask others about their gaming experience and to identify any bugs.
 
