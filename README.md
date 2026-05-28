@@ -130,4 +130,6 @@ Test: Run the game; if the UI panel on screen updates to show the custom "Title"
 ### Activity 1
 1. The night vision potion effect, enchantment effect and snow rendering effect in the game "Minecraft".
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/fa64951b-3db9-4a4b-8aba-e595f9ab3693" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/0c541fd0-0e97-49d9-8b87-7a55a32f07ff" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/b07cb817-f3fd-4858-98a0-5a7b246eb6ca" />
 
