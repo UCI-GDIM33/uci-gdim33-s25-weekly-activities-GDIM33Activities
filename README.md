@@ -114,3 +114,11 @@ Represent diverse narrative branches through player choices within gameplay. The
 2. If the Sprite texture were set to white, like it is by default, the sprite would consistently be illuminated. The texture, therefore, needs to be set to black as the default in order to allow the illumination to accumulate over time, and later revert once more. Being that it is an effect atop the original texture, however, it needs to be added to make the effect work properly.
 3. It's likely that the reason why the texture of the sprite doesn't change, even when the default changes, is because the sprite's texture overwrites the default. Hence, the effect triggers over the sprite's texture instead of the default texture.
 4. As previously stated, the time node is needed to ensure the shine effect is repeated continuously every second. Multiplying it by ShineSpeed, however, can increase the amount of times the effect repeats per second.
+
+## W9
+### Activity 1
+1. Minecraft nausea is likely the result on a Full Screen Pass Renderer squashing and stretching the scene every second using a timer and fraction nodes within its shader graph. This can likely be toggled on and off with a volume component.
+2. Minecraft block outlines can be created by creating an outline shader graph and placing it alongside the regular texture materials, then gameobjects can move between layers / materials to achieve the outline effect.
+
+### Activity 2
+While I focused on the shader graph for now, I edited the NPC class to notify the player when they are executed, holding their names in a list within the Player Class. This will be used in the future to allow NPCs access to different dialogue nodes depending on whether a character died.
