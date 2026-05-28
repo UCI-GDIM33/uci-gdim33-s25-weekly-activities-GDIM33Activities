@@ -126,6 +126,8 @@ Test: Run the game; if the UI panel on screen updates to show the custom "Title"
 
 2. When the value is 0, the screen is completely normal and no red pebble effect can be seen. When the value is 0.5, the screen is a result of the original game image and the red texture effect being mixed equally, giving a semi-transparent red overlay effect. When the value is 1, the screen completely becomes the effect after multiplying by the pebble texture, with the red coverage being the strongest.
 
-3. Because Lerp essentially performs a percentage-based blending between two inputs. A value of 0 means 100% use of the first input (the original image), a value of 1 means 100% use of the second input (the texture overlay effect), and a value of 0.5 means a 50% blend of both. So the larger the number, the more pronounced the effect.
+## W9
+### Activity 1
+1. The night vision potion effect, enchantment effect and snow rendering effect in the game "Minecraft".
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/fa64951b-3db9-4a4b-8aba-e595f9ab3693" />
 
-4. Because the output range of sin(time) is from -1 to 1, while Lerp only accepts values between 0 and 1. When sin is negative, it will cause the screen to be very bright. After changing the formula to ((sin(time) + 1) / 2), the output range is compressed to be between 0 and 1. Thus, the Lerp blending value will always be within a valid range.
