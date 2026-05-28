@@ -120,3 +120,21 @@ Activity chosen: 2A (outline and cel shading)
 2. StencilWritePass and DrawOpaqueObjects make no visible difference to the shiba. It's being drawn twice because the first time we're writing to the stencil buffer, and the second time is the usual draw pass.
 3. We add the results because for both results, part of the preview sphere is black (0 0 0). If we multiplied the colours of these spheres, we'd get a lot more black, when really we want the non-black parts to combine.
 4. Changing the layer the shiba is on toggles the outline effect because we set the outline effect to only draw on the Outline layer.
+
+<hr>
+
+## W9
+### Activity 1
+Game: Hollow Knight Silksong<br>
+(all gifs are from the Hollow Knight Silksong Wiki)<br>
+System 1: Flea Brew Color Pulse<br>
+<img src="https://cdn.wikimg.net/en/hkwiki/images/3/39/GIF_SS_Flea_Brew_01.gif"><br>
+When Hornet drinks flea brew, her sprite pulsates with a golden colour for the duration of the brew's effect.
+
+I think this is an effect on the player (Hornet)'s material, it would be helpful to have such a pulsing effect that you could customize with different colors, durations, etc. for different player statuses or animations. Major features would most likely be multiplying the player sprite (texture) with a given colour.
+
+System 2: Plasmium Overdose Screen Flash <br>
+<img src="https://cdn.wikimg.net/en/hkwiki/images/thumb/0/06/GIF_SS_Plasmium_Phial_02.gif/400px-GIF_SS_Plasmium_Phial_02.gif"><br>
+When Hornet overdoses on plasmium, the screen flashes with a cyan light during the animation.
+
+
