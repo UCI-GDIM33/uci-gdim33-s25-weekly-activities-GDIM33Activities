@@ -160,6 +160,42 @@ For Activity 2, I had already set up some variables in my C# script before class
 
 4. result of sin(time)is -1 to 1, (sin(time)+1)/2 change its result to 0-1, So the effect smoothly changes from no effect to full effect
 
+## W8
+
+### Activity 1
+
+Step 1: Our group chose Fruit Ninja.
+
+Step 2: 
+Effect 1: Moving Background Arrows
+
+<img width="817" height="370" alt="截屏2026-05-27 下午6 50 03" src="https://github.com/user-attachments/assets/9dd07ace-8b7f-4d68-95bc-7d2ef47dafe8" />
+
+The Arrows keep moving upward during the game. I think this effect is probably made with a material shader on the background, and it is not a full-screen effect. The shader may move the texture upward over time.
+
+This effect is probably always active.
+ As long as the background is visible, the arrows keep moving.
+
+Effect 2: White Screen Flash
+
+<img width="817" height="370" alt="截屏2026-05-27 下午6 50 03" src="https://github.com/user-attachments/assets/855d03c3-0c6b-4254-aaf6-e59bb5c54776" />
+
+Another effect is the white flash when the player slices many fruits. I think this is a full-screen post-processing effect. It affects the whole screen. The shader may blend the screen with white color. When the combo happens, the white color appear for a short moment. Then it quickly fades away.
+
+This effect is activated by gameplay. When the player hits many fruits, the game triggers the flash effect.
+
+### Activity 2
+
+<img width="289" height="417" alt="截屏2026-05-27 下午6 41 45" src="https://github.com/user-attachments/assets/2efdf01a-a7c9-4ac6-b446-af492403d523" />
+<img width="305" height="304" alt="截屏2026-05-27 下午6 27 59" src="https://github.com/user-attachments/assets/76c60256-01f4-4362-9359-9e3735445dcc" />
+<img width="719" height="455" alt="截屏2026-05-27 下午6 42 30" src="https://github.com/user-attachments/assets/7f5edc54-aff8-4964-b0a1-6b591aec8795" />
+
+I finished my Shader Graph for the damage screen effect. The effect is a full-screen shader. When the player gets hit, the screen shows a red vignette effect.At first, the effect did not show correctly because my project was not using the Universal Render Pipeline. To fix this, I changed the render pipeline to URP.
+
+However, after switching to URP, some of my guard materials stopped working correctly. The textures became wrong or did not display properly. To fix this, I manually changed the guard materials to Lit(Universal Render Pipeline/). Then I reconnected the correct texture maps, such as the Base Map, Normal Map, Metallic Map. After doing this, the guards looked correct again under URP.
+
+
+
 
 
 
