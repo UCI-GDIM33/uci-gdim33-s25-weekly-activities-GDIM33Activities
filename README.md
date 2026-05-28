@@ -131,10 +131,11 @@ System 1: Flea Brew Color Pulse<br>
 <img src="https://cdn.wikimg.net/en/hkwiki/images/3/39/GIF_SS_Flea_Brew_01.gif"><br>
 When Hornet drinks flea brew, her sprite pulsates with a golden colour for the duration of the brew's effect.
 
-I think this is an effect on the player (Hornet)'s material, it would be helpful to have such a pulsing effect that you could customize with different colors, durations, etc. for different player statuses or animations. Major features would most likely be multiplying the player sprite (texture) with a given colour.
+I think this is an effect on the player (Hornet)'s material, it would be helpful to have such a pulsing effect that you could customize with different colors, durations, etc. for different player statuses or animations. Major features would most likely be tinting the sprite by multiplying the player sprite (texture) with a given colour, and changing how much the sprite is tinted with the color over time. I think it would be easiest to set this by changing the material settings, especially if there are multiple kinds of color flashes being used in the game, you could just set the color, duration, and any other settings.
 
 System 2: Plasmium Overdose Screen Flash <br>
 <img src="https://cdn.wikimg.net/en/hkwiki/images/thumb/0/06/GIF_SS_Plasmium_Phial_02.gif/400px-GIF_SS_Plasmium_Phial_02.gif"><br>
 When Hornet overdoses on plasmium, the screen flashes with a cyan light during the animation.
 
+I think this is a postprocessing effect, since the effect appears to affect the entire screen. Every pixel on the screen is multiplied with the cyan colour. After a while, the cyan fades away. I think this would best be triggered by enabling/disabling the postprocessing effect, since... well, I believe it's a postprocessing effect, and this effect is only shown occasionally in gameplay on trigger, rather than being active all the time.
 
