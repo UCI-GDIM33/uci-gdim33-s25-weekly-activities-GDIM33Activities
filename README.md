@@ -178,7 +178,7 @@ This effect is probably always active.
 
 Effect 2: White Screen Flash
 
-<img width="817" height="370" alt="截屏2026-05-27 下午6 50 03" src="https://github.com/user-attachments/assets/855d03c3-0c6b-4254-aaf6-e59bb5c54776" />
+<img width="832" height="391" alt="截屏2026-05-27 下午6 53 28" src="https://github.com/user-attachments/assets/050fe6b3-4163-459b-9699-a631891bb579" />
 
 Another effect is the white flash when the player slices many fruits. I think this is a full-screen post-processing effect. It affects the whole screen. The shader may blend the screen with white color. When the combo happens, the white color appear for a short moment. Then it quickly fades away.
 
