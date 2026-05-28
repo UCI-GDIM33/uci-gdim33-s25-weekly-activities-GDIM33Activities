@@ -121,4 +121,6 @@ Represent diverse narrative branches through player choices within gameplay. The
 2. Minecraft block outlines can be created by creating an outline shader graph and placing it alongside the regular texture materials, then gameobjects can move between layers / materials to achieve the outline effect.
 
 ### Activity 2
+<img width="537" height="412" alt="Screenshot 2026-05-27 223937" src="https://github.com/user-attachments/assets/3d44234a-a5bb-455b-a242-3a3a783ebd2a" />
+
 While I focused on the shader graph for now, I edited the NPC class to notify the player when they are executed, holding their names in a list within the Player Class. This will be used in the future to allow NPCs access to different dialogue nodes depending on whether a character died.
