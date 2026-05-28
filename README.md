@@ -139,3 +139,10 @@ When Hornet overdoses on plasmium, the screen flashes with a cyan light during t
 
 I think this is a postprocessing effect, since the effect appears to affect the entire screen. Every pixel on the screen is multiplied with the cyan colour. After a while, the cyan fades away. I think this would best be triggered by enabling/disabling the postprocessing effect, since... well, I believe it's a postprocessing effect, and this effect is only shown occasionally in gameplay on trigger, rather than being active all the time.
 
+### Activity 2
+<img width="1578" height="826" alt="2026-05-27 18-56-36" src="https://github.com/user-attachments/assets/1924da6a-5988-413c-9bf6-34ad2c0023e7" />
+I started and finished a shader I intend to use on the items in my game. When the user's sticky hand is close enough to pick up an item, it will flash using this shader. I had one issue with getting it to start and stop, and the problem turned out to be that sprites use a transparent texture, so instead of drawing AfterOpaque (as we did in previous class activities) it should have been drawn AfterTransparent.
+
+I was originally intending on making an outline shader similar to the one we did for the shiba in last week's activity A, but soon realized that since I'm working with 2D sprites rather than 3D meshes, the process is very different and much more involved, so I settled for this instead.
+
+<hr>
