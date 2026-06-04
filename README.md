@@ -146,3 +146,39 @@ I started and finished a shader I intend to use on the items in my game. When th
 I was originally intending on making an outline shader similar to the one we did for the shiba in last week's activity A, but soon realized that since I'm working with 2D sprites rather than 3D meshes, the process is very different and much more involved, so I settled for this instead.
 
 <hr>
+
+## W10
+### Activity 1
+[Itch Link](https://sunrd.itch.io/adventure-of-a-sticky-hand-playtest-3)
+New content: smoother movement, gun fixes (should no longer fire bullets backwards when at specific angles), removed item smuggling (bringing an item from the previous level to the next)
+
+Playtesting goals: I want feedback as to whether or not players know what to do when they start playing my game, since that's basically what the graders will be trying to figure out for the final submission... :)
+
+Feedback: 
+Can put more instructions. It is not clear what checkpoints and level goals look like, it can be difficult to identify items that can be picked up, and how to use items in different ways.
+
+The direction of the firing of the gun is unintuitive, and should probably fire in the direction the arrow suggests.
+
+### Activity 2
+When planning a game:
+1. Identify major systems<br>
+   eg: Character, DialogueSystem, QuestManager
+2. Identify what those systems do
+    - Why is this system needed?
+    - What does this system accomplish?
+    - What does this system need to accomplish its task?
+3. Identify how those systems interact with each other<br>
+    eg: talking to Character through DialogueSystem gives a Quest, which is tracked by QuestManager...
+    - Any functions
+    - Data required
+4. Slim down
+    - Reduce repetition of code: try to identify shared data/behaviors that could be slimmed down using super/subclassing, interfaces, etc
+5. Break steps down
+    - Some interactions can be complex or lengthy, so breaking them down into manageable steps makes the process more achievable (visible progress)
+6. Write this information somewhere
+    - Pick a readable, intuitive way to store the info (eg: an object and interaction map)
+    - Actually refer to this information during development
+
+In creating the plan for a game, for me, it helps me point out and cut feature bloat, and identify tasks that might take longer or shorter periods of time. A lot of the time I realize I'm overscoping, and need to cut it down to something more basic before I try to implement more.
+
+### Activity 3
