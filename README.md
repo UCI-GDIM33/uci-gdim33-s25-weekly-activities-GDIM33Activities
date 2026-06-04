@@ -149,7 +149,7 @@ I was originally intending on making an outline shader similar to the one we did
 
 ## W10
 ### Activity 1
-[Itch Link](https://sunrd.itch.io/adventure-of-a-sticky-hand-playtest-3)
+[Itch Link](https://sunrd.itch.io/adventure-of-a-sticky-hand-playtest-3)<br>
 New content: smoother movement, gun fixes (should no longer fire bullets backwards when at specific angles), removed item smuggling (bringing an item from the previous level to the next)
 
 Playtesting goals: I want feedback as to whether or not players know what to do when they start playing my game, since that's basically what the graders will be trying to figure out for the final submission... :)
