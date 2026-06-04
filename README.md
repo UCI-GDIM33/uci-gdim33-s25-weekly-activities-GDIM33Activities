@@ -182,3 +182,5 @@ When planning a game:
 In creating the plan for a game, for me, it helps me point out and cut feature bloat, and identify tasks that might take longer or shorter periods of time. A lot of the time I realize I'm overscoping, and need to cut it down to something more basic before I try to implement more.
 
 ### Activity 3
+Five levels is a bit short so I'm working on another one. Not sure how much I'm aiming for in the final submission, maybe eight?
+I'm also adding more crusher types, you can't have enough hazards in a platforming game. I kind of want to add an OMORI-style dilemma in a level where you find out you didn't actually have to kill the enemy to proceed in the level. (Oops. spoilers.)
