@@ -139,3 +139,19 @@ Test: Run the game; if the UI panel on screen updates to show the custom "Title"
 <img width="820" height="646" alt="2f5cb2a277f8a10155c18849e14ea066" src="https://github.com/user-attachments/assets/e2ad0008-6368-425c-b9ee-3b5914c8d9cc" />
 
 During today's class, I worked on a Fullscreen Shader Graph that creates a red vignette effect tied to the player's sanity system. The shader calculates the distance of each pixel from the center of the screen using screen position coordinates, and uses that distance combined with an Intensity parameter to blend the normal screen image with a red color — so as the player's sanity drops, the edges of the screen gradually turn red and the effect spreads toward the center. One problem I solved was that the screen was completely black when I first set it up, which turned out to be because the URP Sample Buffer output was connected to the Alpha slot of the Fragment node instead of the Base Color slot. After fixing that connection and making sure the Combine node was outputting RG(2) into the UV input, the screen displayed correctly. I also added a distortion effect on top of the red vignette by using Sine and Time nodes to offset the UV coordinates, so the image warps and shakes as the sanity value decreases.
+
+## W10
+### Activity 1
+1. I added more submission points and items, thus extending the game's progress.
+   
+2.https://beiduo-jin.itch.io/vsfs 
+
+3.  When picking up the items, the flashlight was too bright and caused my eyes to hurt. Additionally, the map was somewhat blurry and made it easy for me to get tired. The game provides few hints. Some additional hints could be added.
+
+### Activity 2
+1. The planning strategy our table came up with starts with object diagrams — drawing bubbles for each major system, then splitting each bubble into smaller, specific objects with clear properties and behaviors. Once the objects are defined, you draw arrows between them to show how they interact and depend on each other, which makes it easier to see which systems need to be built first. From there, you write a task break-down for each system, with smaller substeps and a clear test condition for each one so you know when something is actually working before moving on.
+
+As for how planning affects scope, it makes the game feel much larger and more complicated than it initially seemed. What looks like a simple mechanic on the surface often turns out to involve multiple interacting systems working together. This forces you to be realistic about what you can finish in a given timeframe and helps you prioritize essential features over optional ones. Planning does not make a project feel smaller — it reveals the true scope, which is one of the most valuable things it can do.
+
+### Activity 3
+1. I have redesigned the prompts for collection points and evacuation points. Now, the prompts for all collection points before evacuation will not appear, and the prompt for the evacuation point will disappear after it is completed, to avoid confusing the players. Additionally, I also weakened the monster's tracking ability.
