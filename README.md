@@ -1,17 +1,157 @@
 # GDIM 33 In-Class Activities
 ## W1
 ### Activity 1
-Put your inspo board link here. Do NOT leave a bare URL. REMOVE ALL INSTRUCTIONAL TEXT.
-
-1. Put your activity 1 answers here.
-2. Please keep the proper list format.
+[Google Paint1](https://docs.google.com/drawings/d/122QOKK0hZIUno_Q0jJ_vcVixD7VN3SM41nLzGfHJDic/edit)
+   
+1. I chose the card battle type of games, where players fight against NPCs and eventually defeat them. Players can use different cards to perform various actions, such as attacking, defending, etc. I was interested in games like Slay the Spire and Clash Royale and referred to them.
+ 
+2. My tablemate chose a game similar to Left 4 Dead 2, which is about fighting zombies. The similarity between us is that we both chose games where we fight against NPCs, and we both have a dark style.
+   
+3. LA also enjoys this card-based battle game. He likes this type of game that relies on clear strategies. This is similar to me.
 
 
 ### Activity 2
-Put your activity 2 image here. REMOVE THIS INSTRUCTIONAL TEXT.
+<img width="1024" height="566" alt="image" src="https://github.com/user-attachments/assets/cc249cb5-abac-4998-96aa-c28d15058f6c" />
 
 
-## W2
-Write your W2 Devlog here.
 
-Continue adding additional headers below this one for future weeks and future activities.
+## W3
+### Activity 1
+<img width="1440" height="1652" alt="image" src="https://github.com/user-attachments/assets/6a55fe2e-7407-4de9-bdcd-28b93bb08569" />
+
+
+### Activity 2
+
+ 1. This way, multiple different objects (such as walruses, penguins or other NPCs) can conveniently share the same "signal". If I want to modify the name of this event in the future, I only need to change it once in the Variables panel, without having to manually modify it in each Graph. This makes the code cleaner and reduces the possibility of errors.
+
+ 2. When I clicked on the walrus but the dialog box didn't pop up, Debug.Log helped me identify where the problem was. I added a Log after the click event on the walrus. If the information was displayed in the Console, it indicated that the click detection was fine, and the problem might be in the state machine transitions. It's like a "signpost", telling the code where it is in the execution process.
+
+ 3. Yes. In my Vertical Slice 3D or interactive games, when players are exploring, I need to lock the mouse (Locked) to control the perspective; but when players open menus or dialog boxes, I must release the mouse (None) otherwise players won't be able to click the UI buttons. Controlling the state of the mouse well can greatly enhance the gaming experience.
+
+ 4. Very relevant. My game also needs to distinguish different modes, such as "combat mode", "exploration mode", or "pause mode". Using game states (Game State) enables the game to run different logic at different stages (for example, pausing enemy movement during dialogue), which makes the overall logic management of the project very clear.
+
+
+## W4
+### Activity 1
+
+1. My playable build now includes movement using the WASD keys, and there is also a flashlight function. Players can use the flashlight to see the scene in front of them clearly. I also designed the environment of the game, which consisted of a room with a floor, a ceiling and several walls. Players can move around inside and use the flashlight to observe the corridors and rooms. My playtesting goals are to figure out what I need to do next and how I should modify my game environment.
+
+2. OKADA Naoma, Thomas Sun, Beiduo Jin
+
+3. The environment is a bit giddy. The lighting is too dim. It should be adjust later. In addition, more rooms can be added.
+
+### Activity 2
+
+1. Under the current system settings, writers can easily add more dialogues without writing any code. This is because all the dialogue content, response options, and the logic for their transitions are stored in a ScriptableObject (i.e., the DialogueNodeW4 file). Writers only need to create a new file in the Unity editor by right-clicking, and inputting text and dragging connections between different nodes as if filling out a form. The system can automatically recognize and generate new content based on the logic we have written.
+
+2. There are no strict limitations. As long as the computer's memory and hard disk space are sufficient, the writer can create hundreds or even thousands of nodes to build a vast story network. The only actual limitation might come from the UI level, where buttons might extend beyond the screen boundaries. However, this is a limitation in visual design rather than a limitation of the dialogue system itself.
+
+3. The "Regenerate Nodes" button functions much like a "mirror" for Visual Scripting, allowing it to re-scan all the code within the project. This is because when you add new variables (such as visual effect prefabs) in the C# script, the Visual Scripting node library does not automatically update in real-time. By clicking this button, the system is forced to refresh the node list, converting the changes we made in the code into searchable and usable visual nodes.
+
+4. <img width="775" height="467" alt="image" src="https://github.com/user-attachments/assets/ccd60248-f648-47c3-b4aa-6d2657880f64" />
+
+## W5
+### Activity 1
+
+#### 1. Step 1: Data Architecture (Least Complex)
+The goal is to create the "container" for our information so the game has a place to pull data from.
+
+Substep 1: Create a C# script named InstructionData.cs that inherits from ScriptableObject.
+
+Substep 2: Define two public string variables: title and content.
+
+Substep 3: Create a new Asset in the Project window using this script (e.g., "Level1_Book") and type in sample text.
+
+Test: Select the asset in the Inspector; if you can see and edit the "Title" and "Content" fields, this step is working.
+
+#### 2. Step 2: Logic and Data Retrieval (Medium Complex)
+The goal is to make the Player "aware" of the data and prove we can access it via code.
+
+Substep 1: In the Player’s Script Machine, create an Object variable named currentData to hold the ScriptableObject.
+
+Substep 2: Regenerate nodes in Project Settings so Visual Scripting can "see" the new C# variables.
+
+Substep 3: Use a "Get Variable" node for currentData and connect it to a "Get Title" node.
+
+Substep 4: Connect the output of "Get Title" to a "Debug Log" node.
+
+Test: Run the game; if the console prints the correct title from the asset, the data bridge is successful.
+
+#### 3. Step 3: UI Integration and Display (Most Complex)
+The goal is to push the retrieved data onto the actual game UI for the player to see.
+
+Substep 1: Create Scene variables for the Title and Content TextMeshPro objects in the Blackboard.
+
+Substep 2: Use the TextMeshProUGUI: Set Text nodes to receive the strings from the ScriptableObject.
+
+Substep 3: Connect the execution flow (green arrows) from the start event through both Set Text nodes.
+
+Substep 4: Troubleshoot the "Missing Target" error by verifying the Set Text node matches the UGUI component type.
+
+Test: Run the game; if the UI panel on screen updates to show the custom "Title" and "Content," the feature is complete.
+
+### Activity 2 
+
+   While building the feature today, I ran into a frustrating issue where the UI refused to update and kept throwing a "Missing Target" error. To find the bug, I had to use a lot of trial and error. I spent a long time connecting and disconnecting different logic wires to isolate exactly where the break was happening. I noticed that while the "Title" part of the system seemed to work fine in some tests, the "Content" section would often cause the whole system to fail.
+
+   After carefully comparing my nodes and testing different versions of the same command, I finally discovered the root cause: I was using the wrong version of the Set Text node. In Unity, there is a version for 3D objects and a version specifically for UI elements called TextMeshProUGUI. Because these nodes look almost identical in the graph editor, I had accidentally picked the 3D one. By systematically disconnecting my variables and testing them one by one, I was able to identify the mismatch. Once I replaced the nodes with the correct UGUI versions and cleaned up my wiring, the text finally displayed perfectly. Finally, I completed the scripting of the scriptable object and modified the UI so that when players click different keys, they would be redirected to different interfaces.
+
+## W7
+1. Is from 3D model resource file
+
+2. Because the GPU performed interpolation. The shader will automatically calculate a transitional color for each pixel within the polygon based on the color values of the three vertices of the triangle.
+
+3. The vertex coloring has poor details because its resolution is limited by the number of model faces (only areas with vertices have color data); while textures can define details at each pixel. Vertex colors do not occupy additional texture memory and are suitable for optimizing performance and adding color variations to large areas of the environment.
+
+4. The normal direction of the vertices of the grid is incorrect.
+
+5. In addition to the normal vector, we can also visualize the UV coordinates. By mapping the U and V components of the UV onto the red (R) and green (G) channels respectively, we can check for any stretching, distortion or misalignment in the texture by observing the smoothness and arrangement of the colors. This can be used to detect if there are any alignment issues with the model.
+
+6. It is due to the logical reversal of the dot product. The default direction vector of the light ray points from the light source to the object, while the normal vector points outward from the object; when the light ray is directed towards the front, the two vectors are in opposite directions, and the dot product is negative (turning black). Therefore, we need to multiply the light vector by -1 to reverse the direction.
+
+7. In step (6), the flame is set to the "Additive" mode because this mode directly adds the pixel color values of the flame to the background color. Since the flame is a luminous object, additive blending makes the overlapping parts brighter, perfectly simulating the visual effect of the flame, and also eliminating the hassle of handling complex occlusion relationships.
+
+## W8
+### Activity 1
+1. I refined my game scenario, adjusted the values of the enemies, added other items that could be collected.
+
+2. https://beiduo-jin.itch.io/vsms3
+
+3. My goal for the playtest is to ask others about their gaming experience and to identify any bugs.
+
+4. Playtest notes: I noticed that sometimes the monster's target detection seems to have some issues. Even if the player is nearby, it won't attack. Additionally, when pushing the cart, there is some obstruction that blocks the players' view. This can be improved.
+
+### Activity 2C
+1. This pass is named "Full Screen Pass". It can be identified by its position in the rendering process - it appears after all the ordinary objects (OpaqueObjects, Skybox, etc.) have been rendered, which is exactly where the post-processing effect should be located, as it needs to process the entire rendered image.
+
+2. When the value is 0, the screen is completely normal and no red pebble effect can be seen. When the value is 0.5, the screen is a result of the original game image and the red texture effect being mixed equally, giving a semi-transparent red overlay effect. When the value is 1, the screen completely becomes the effect after multiplying by the pebble texture, with the red coverage being the strongest.
+
+## W9
+### Activity 1
+1. The night vision potion effect, enchantment effect and snow rendering effect in the game "Minecraft".
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/fa64951b-3db9-4a4b-8aba-e595f9ab3693" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/0c541fd0-0e97-49d9-8b87-7a55a32f07ff" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/b07cb817-f3fd-4858-98a0-5a7b246eb6ca" />
+
+2. The snow effect and the enchantment effect are renderer features that are applied to certain objects, while the night vision effect should be a full-screen effect. The first two will display a border or a glow when the cursor moves above them to indicate that you have selected it. The third one, "full screen", changes the color. In my game, the "full screen effect" can also be used to symbolize the distorted and reddened effect of the screen when the sanity level is low.
+
+### Activity 2
+<img width="820" height="646" alt="2f5cb2a277f8a10155c18849e14ea066" src="https://github.com/user-attachments/assets/e2ad0008-6368-425c-b9ee-3b5914c8d9cc" />
+
+During today's class, I worked on a Fullscreen Shader Graph that creates a red vignette effect tied to the player's sanity system. The shader calculates the distance of each pixel from the center of the screen using screen position coordinates, and uses that distance combined with an Intensity parameter to blend the normal screen image with a red color — so as the player's sanity drops, the edges of the screen gradually turn red and the effect spreads toward the center. One problem I solved was that the screen was completely black when I first set it up, which turned out to be because the URP Sample Buffer output was connected to the Alpha slot of the Fragment node instead of the Base Color slot. After fixing that connection and making sure the Combine node was outputting RG(2) into the UV input, the screen displayed correctly. I also added a distortion effect on top of the red vignette by using Sine and Time nodes to offset the UV coordinates, so the image warps and shakes as the sanity value decreases.
+
+## W10
+### Activity 1
+1. I added more submission points and items, thus extending the game's progress.
+   
+2.https://beiduo-jin.itch.io/vsfs 
+
+3.  When picking up the items, the flashlight was too bright and caused my eyes to hurt. Additionally, the map was somewhat blurry and made it easy for me to get tired. The game provides few hints. Some additional hints could be added.
+
+### Activity 2
+1. The planning strategy our table came up with starts with object diagrams — drawing bubbles for each major system, then splitting each bubble into smaller, specific objects with clear properties and behaviors. Once the objects are defined, you draw arrows between them to show how they interact and depend on each other, which makes it easier to see which systems need to be built first. From there, you write a task break-down for each system, with smaller substeps and a clear test condition for each one so you know when something is actually working before moving on.
+
+As for how planning affects scope, it makes the game feel much larger and more complicated than it initially seemed. What looks like a simple mechanic on the surface often turns out to involve multiple interacting systems working together. This forces you to be realistic about what you can finish in a given timeframe and helps you prioritize essential features over optional ones. Planning does not make a project feel smaller — it reveals the true scope, which is one of the most valuable things it can do.
+
+### Activity 3
+1. I have redesigned the prompts for collection points and evacuation points. Now, the prompts for all collection points before evacuation will not appear, and the prompt for the evacuation point will disappear after it is completed, to avoid confusing the players. Additionally, I also weakened the monster's tracking ability.

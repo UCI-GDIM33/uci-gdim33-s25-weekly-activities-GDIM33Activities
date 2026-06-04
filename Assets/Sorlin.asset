@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d87814806be98455aa06d85e22ad29d6, type: 3}
+  m_Name: Sorlin
+  m_EditorClassIdentifier: 
+  Line: I love you
+  ReplyOptions:
+  - line: Say that you love her
+    nextNode: {fileID: 11400000, guid: 76bdc80afdda4a948bf22fd0e5ef0782, type: 2}
+  VisualFlairPrefab: {fileID: 7833463171696160981, guid: 567ef03070d364127ae4a23a8541f7c1,
+    type: 3}
