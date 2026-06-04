@@ -124,3 +124,14 @@ Represent diverse narrative branches through player choices within gameplay. The
 <img width="537" height="412" alt="Screenshot 2026-05-27 223937" src="https://github.com/user-attachments/assets/3d44234a-a5bb-455b-a242-3a3a783ebd2a" />
 
 While I focused on the shader graph for now, I edited the NPC class to notify the player when they are executed, holding their names in a list within the Player Class. This will be used in the future to allow NPCs access to different dialogue nodes depending on whether a character died.
+
+## W10
+### Activity 1
+https://gio-solorio.itch.io/ms3
+I could not playtest my game being that I was suffering from a Unity error at the time, this error has been resolved. If I were to playtest, I would want to test the types of diaoogue paths players would initially take during gameplay, to ensure variability.
+
+### Activity 2
+Our basic strategy revolved around diagraming at first, creating maps leading up to the high-level pitch, in which the concepts from these maps are strung together. Only then, may the creator take to Unity to start building the game from the ground up.
+
+### Activity 3
+I fixed the ShaderGraph to work within the build, as there was an error before where the Universal Rendering Pipeline would revert whenever the build would compile.
